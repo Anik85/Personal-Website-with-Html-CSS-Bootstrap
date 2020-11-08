@@ -1,0 +1,177 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+body{
+	background-color:silver;
+}
+.full_wrap{
+	width:100%;
+}
+.wrap{
+	width:960px;
+	margin:0 auto;
+	display:block;
+}
+.header{
+	background:orange;
+	border-bottom:5px solid chocolate;
+	border-top:5px solid chocolate;
+}
+
+#search{
+	float:right;
+}
+
+#header{
+	background-color:orange;
+	padding:15px;
+	border:2px solid #9A5D2A;
+}
+#header h2{
+	color:white;
+	font-family:georgia;
+	animation-name:header;
+	animation-duration:3s;
+	animation-iteration-count:infinite;
+	position:relative;
+}
+@keyframes header{
+	0%{color:white;}
+	20%{color:green;}
+	40%{color:red;}
+	60%{color:blue;}
+	80%{color:chocolate;}
+	100%{color:white;}
+}
+#header p{
+	color:green;
+	font-family:georgia;
+	display:inline;
+}
+#nav{
+	background-color:white;
+	height:38px;
+	border-right:1px solid #9A5D2A;
+	border-left:1px solid #9A5D2A;
+}
+.menu{
+	background:white;
+	border-bottom:5px solid maroon;
+}
+#nav ul{
+	background-color:white;
+	list-style-type:none;
+	z-index:10;
+}
+#nav ul li{
+	float:left;
+	border-right:1px solid maroon;
+	font-family:arial;
+	position:relative;
+}
+#nav ul li:last-child{
+	border-right:none;
+}
+#nav ul li a{
+	text-decoration:none;
+	color:gray;
+	display:block;
+	padding:10px 20px;
+	-webkit-transition:0.4s all ease;
+}
+#nav ul li a:hover{
+	color:white;
+	background-color:black;
+}
+#nav ul li ul{
+	position:absolute;
+	left:-9999px;
+	transition:all 0.5s ease;
+	width:150px;
+	
+}
+#nav ul li:hover ul{
+	left:0px;
+	
+}
+#nav ul li ul li{
+	float:none;
+	border-right:none;
+	
+	border-bottom:1px solid maroon;
+	position:relative;
+}
+#nav ul li ul li:first-child{
+
+	border-top:5px solid maroon;
+}
+
+#nav ul li ul li ul{
+	position:absolute;
+	top:-9999px;
+
+}
+#nav ul li ul li ul li{
+	border-left:1px solid maroon;
+	border
+}
+#nav ul li ul li ul li:first-child{
+	border-top:none;
+}
+#nav ul li ul li:hover ul{
+	left:150px;
+	top:0px;
+}
+
+#content_wrapper{
+	border-right:1px solid #9A5D2A;
+	border-left:1px solid #9A5D2A;
+	background-color:white;
+	overflow:hidden;
+	padding:10px;
+	
+}
+ table{
+	margin:0 auto;
+	width:700px;
+	height:400px;
+	background-color:#ddd;
+}
+#content_wrapper table img{
+	width:200px;
+	height:120px;
+	display:block;
+	padding:0px;
+}
+table th{
+	font-family:georgia;
+	font-size:50px;
+	background:white;
+}
+.content{
+	border-top:5px solid maroon;
+}
+
+
+#footer{
+	background-color:maroon;
+	text-align:center;
+	padding:8px;
+}
+
+.footer{
+	border-top:5px solid chocolate;
+	background:#800000;
+}
+#footer p{
+	color:white;
+}
+
+
+
+
+
+
+
+
